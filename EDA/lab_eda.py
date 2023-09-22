@@ -5,8 +5,8 @@ import pandas as pd
 dimensions = [10, 50, 100, 500, 1000, 2000, 5000]
 
 for dim in dimensions:
-    # Cargar las distancias desde el archivo CSV
-    df = pd.read_csv(f'distances_dim_{dim}.csv', header=None, names=['Distance'])
+    # Cargar las distancias desde el archivo txt
+    df = pd.read_csv(f'distancia_dimension_{dim}.txt', header=None, names=['Distance'])
 
     # Crear un histograma
     plt.figure(figsize=(8, 6))
